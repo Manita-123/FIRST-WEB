@@ -124,10 +124,17 @@ span{color: rgb(247, 4, 4); font-size: 2rem;}
 /* Contact page */
 .contact-info{margin: 60px 0 0;}
 .contact-info p{margin: 2rem 0;}
+.contact-info>div{align-self: center;}
 .contact .flex{gap:4rem; margin-bottom: 40px;}
 .contact a{background: #c0462d; color: var(--w); line-height: 51px; width: 185px;border-radius: 10px; display: block; margin:1rem 0 0 42rem  ;}
-.cont{white-space: nowrap; margin-left:59rem ;}
+.cont{white-space: nowrap; align-self:center;}
 .cont a{display: block; margin: 1rem;}
+
+/* About Page */
+.About-info h1{ margin-bottom: 40px;}
+.About-info .about p{font: 400 16px var(--ff); line-height: 24px; margin-bottom: 24px; opacity: 0.6; text-align: justify;}
+.About-info .row{margin: 60px 0;}
+.About-info h3{ font:500 24px var(--ff); line-height: 34px; margin-bottom: 24px; color: rgb(12, 12, 247);}
 
 /* responsive */
 @media screen and (max-width:1280px){
