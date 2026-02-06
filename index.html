@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -19,7 +20,7 @@
                     </div>
                     <div class="col-10 col-m-6">
                         <nav class="flex justify-right ">
-                            <ul class="flex">
+                            <ul class="flex nav-menu">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="">Portfolio</a></li>
@@ -29,6 +30,7 @@
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                             <div class="hamburger">&#9776;</div>
+                            <div class="cross">&#9747;</div>
                         </nav>
                     </div>
                 </div>
@@ -45,7 +47,7 @@
                     </div>
                     <div class="col-7 col-t-6 col-p-12  order-p-1">
                         <div class="flex justify-right">
-                            <img src="img/service-icon.svg" alt="Services" height="535" width="499" class="img-resp">
+                            <img src="img/service-icon.svg" alt="Services" height="535" width="499" class="img-resp" data-aos="fade-left">
                         </div>
                     </div>
                 </div>
@@ -61,28 +63,28 @@
                 </div>
                 <div class="row">
                     <div class="col-3 col-t-6 col-p-12">
-                        <section class="s1">
+                        <section class="s1" data-aos="zoom-in">
                             <h3>SOFTWARE DEVELOPMENT</h3>
                             <p class="para">Posuvere morbi leo urna molestie at elementum eu egestas.</p>
                             <a href="">Learn more &gt;</a>
                         </section>
                     </div>
                     <div class="col-3 col-t-6 col-p-12">
-                        <section class="s2">
+                        <section class="s2" data-aos="zoom-in">
                             <h3>AI Programmer &amp; Technical</h3>
                             <p class="para">Posuvere morbi leo urna molestie at elementum eu egestas.</p>
                             <a href="">Learn more &gt;</a>
                         </section>
                     </div>
                     <div class="col-3 col-t-6 col-p-12">
-                        <section>
+                        <section data-aos="zoom-in">
                             <h3>System Application Development</h3>
                             <p class="para">Posuvere morbi leo urna molestie at elementum eu egestas.</p>
                             <a href="">Learn more &gt;</a>
                         </section>
                     </div>
                     <div class="col-3 col-t-6 col-p-12">
-                        <section>
+                        <section data-aos="zoom-in">
                             <h3>Data Structure &amp; Algorithm</h3>
                             <p class="para">Posuvere morbi leo urna molestie at elementum eu egestas.</p>
                             <a href="">Learn more &gt;</a>
@@ -91,19 +93,19 @@
                 </div>
             </article>
             <div class="info row text-center">
-                <div class="col-3 col-t-6 col-p-12">
+                <div class="col-3 col-t-6 col-p-12" data-aos="fade-down">
                     <b>782</b>
                     <p>WORLDWIDE CUSTOMERS</p>
                 </div>
-                <div class="col-3 col-t-6 col-p-12">
+                <div class="col-3 col-t-6 col-p-12" data-aos="fade-down">
                     <b>12K</b>
                     <p>PROJECTS DONE</p>
                 </div>
-                <div class="col-3 col-t-6 col-p-12">
+                <div class="col-3 col-t-6 col-p-12" data-aos="fade-down">
                     <b>5,896</b>
                     <p>IT PROJECTS</p>
                 </div>
-                <div class="col-3 col-t-6 col-p-12">
+                <div class="col-3 col-t-6 col-p-12" data-aos="fade-down">
                     <b>&dollar; 890 K</b>
                     <p>PROJECTS SPEND</p>
                 </div>
@@ -137,7 +139,7 @@
                     </div>
                     <div class="col-6 col-m-12 order-m-1">
                         <img src="img/about.webp" srcset="img/about-2x.webp" alt="About" height="582" width="478"
-                            loading="lazy" class="img-resp">
+                            loading="lazy" class="img-resp" data-aos="flip-right">
                     </div>
                 </div>
             </article>
@@ -149,11 +151,11 @@
                 <div class="works">
                     <ul class="flex">
                         <li class="flex active">
-                            <a href="">Our Mission</a>
+                            <a class="vert" href="">Our Mission</a>
                             <div class="work">
                                 <div class="flex align-items">
                                     <div class="work-img">
-                                        <img src="/img/our-mission.webp" srcset="/img/our-mission-2x.webp"
+                                        <img src="img/our-mission.webp" srcset="img/our-mission-2x.webp"
                                             alt="Our-mission" height="295" width="300" loading="lazy" class="img-resp">
                                     </div>
                                     <div class="img-desc">
@@ -170,11 +172,12 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="flex"><a href="">Our Company</a>
+                        <li class="flex">
+                            <a class="vert" href="">Our Company</a>
                             <div class="work">
                                 <div class="flex align-items">
                                     <div class="work-img">
-                                        <img src="/img/our-mission.webp" srcset="/img/our-mission-2x.webp"
+                                        <img src="img/our-mission.webp" srcset="img/our-mission-2x.webp"
                                             alt="Our-mission" height="295" width="300" loading="lazy" class="img-resp">
                                     </div>
                                     <div class="img-desc">
@@ -191,11 +194,12 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="flex"><a href="">Our Customer</a>
+                        <li class="flex">
+                            <a class="vert" href="">Our Customer</a>
                             <div class="work">
                                 <div class="flex align-items">
                                     <div class="work-img">
-                                        <img src="/img/our-mission.webp" srcset="/img/our-mission-2x.webp"
+                                        <img src="img/our-mission.webp" srcset="img/our-mission-2x.webp"
                                             alt="Our-mission" height="295" width="300" loading="lazy" class="img-resp">
                                     </div>
                                     <div class="img-desc">
@@ -223,7 +227,7 @@
                 <div class="row reviews">
                     <div class="col-4 col-p-12">
                         <section>
-                            <div class=" review text-center">
+                            <div class=" review text-center" data-aos="flip-left">
                                 <div class="review-top">
                                     <img src="img/Frame.svg" alt="frame" height="80" width="80" loading="lazy">
                                     <p>Nisi Rhoncus Msttis Rhoncus Urna Neque Viverra Turpis Egestas Pretium Aenean
@@ -236,7 +240,7 @@
                                         <span class="fill">&starf;</span>
                                         <span>&starf;</span>
                                     </div>
-                                    <img src="/img/profile2.svg" alt="profile-1" height="120" width="120"
+                                    <img src="img/profile2.svg" alt="profile-1" height="120" width="120"
                                         loading="lazy">
                                 </div>
                                 <div class="review-bottom">
@@ -248,7 +252,7 @@
                     </div>
                     <div class="col-4 col-p-12">
                         <section>
-                            <div class=" review text-center">
+                            <div class=" review text-center" data-aos="flip-down">
                                 <div class="review-top">
                                     <img src="img/Frame.svg" alt="frame" height="80" width="80" loading="lazy">
                                     <p>Nisi Rhoncus Msttis Rhoncus Urna Neque Viverra Turpis Egestas Pretium Aenean
@@ -261,7 +265,7 @@
                                         <span class="fill">&starf;</span>
                                         <span>&starf;</span>
                                     </div>
-                                    <img src="/img/profile-3.svg" alt="profile-2" height="120" width="120"
+                                    <img src="img/profile-3.svg" alt="profile-2" height="120" width="120"
                                         loading="lazy">
                                 </div>
                                 <div class="review-bottom">
@@ -273,7 +277,7 @@
                     </div>
                     <div class="col-4 col-p-12">
                         <section>
-                            <div class=" review text-center">
+                            <div class=" review text-center" data-aos="flip-right">
                                 <div class="review-top">
                                     <img src="img/Frame.svg" alt="frame" height="80" width="80" loading="lazy">
                                     <p>Nisi Rhoncus Msttis Rhoncus Urna Neque Viverra Turpis Egestas Pretium Aenean
@@ -286,7 +290,7 @@
                                         <span class="fill">&starf;</span>
                                         <span>&starf;</span>
                                     </div>
-                                    <img src="/img/profile3.svg" alt="profile-3" height="120" width="120"
+                                    <img src="img/profile3.svg" alt="profile-3" height="120" width="120"
                                         loading="lazy">
                                 </div>
                                 <div class="review-bottom">
@@ -300,12 +304,12 @@
             </article>
             <article class="projects row">
                 <div class="col-6 col-m-12">
-                    <img src="/img/image.svg" alt="projects" height="380" width="610" loading="lazy" class="img-resp">
+                    <img src="img/image.svg" alt="projects" height="380" width="610" loading="lazy" class="img-resp unique" data-aos="zoom-in-up">
                 </div>
                 <div class="col-6 col-m-12 ">
                     <div class="project-desc">
                         <h2>PROJECTS</h2>
-                        <p>Our Amazing Project That <br> Has Been Completed</p>
+                        <p>Our Amazing Project That Has Been Completed</p>
                         <p>Turpis Cursus in Hac Habitasse Platea Dictumst Quisque Sagittis Purus.
                             Ligula Ullamcorper Malesuada Proin Ubero Nunc Consequat.
                         </p>
@@ -324,8 +328,8 @@
                 <div class=" row team">
                     <div class="col-4 col-p-12 text-center">
                         <section class="team-member">
-                            <img src="/img/member-1.svg" alt="member-1" width="380" height="250" loading="lazy"
-                                class="img-resp">
+                            <img src="img/member-1.svg" alt="member-1" width="380" height="250" loading="lazy"
+                                class="img-resp" data-aos="zoom-in-left">
                             <h3>SEBASTIAN DOE</h3>
                             <P>Code Expert</P>
                             <div class="icons ">
@@ -350,8 +354,8 @@
 
                     <div class="col-4 col-p-12 text-center">
                         <section class="team-member">
-                            <img src="/img/member-2.svg" alt="member-2" width="380" height="250" loading="lazy"
-                                class="img-resp">
+                            <img src="img/member-2.svg" alt="member-2" width="380" height="250" loading="lazy"
+                                class="img-resp" data-aos="zoom-in-up">
                             <h3> THEODORES JOHN</h3>
                             <p>Design Expert</p>
                             <div class="icons">
@@ -380,8 +384,8 @@
                     </div>
                     <div class="col-4 col-p-12 text-center">
                         <section class="team-member">
-                            <img src="/img/member-3.svg" alt="member-3" width="380" height="250" loading="lazy"
-                                class="img-resp">
+                            <img src="img/member-3.svg" alt="member-3" width="380" height="250" loading="lazy"
+                                class="img-resp" data-aos="zoom-in-right">
                             <h3> LIAM NOAH DOE</h3>
                             <p>Human Resources</p>
                             <div class="icons ">
@@ -445,6 +449,31 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>   
+<script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        $(function(){
+            AOS.init();
+            $(".hamburger").click(function(){
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function(){
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
+            $(".works .vert").click(function(e){
+                e.preventDefault();
+                $(".works > ul > li").removeClass("active");
+                console.log("hello");
+                $(this).parent().addClass("active");
+            });
+        })
+    </script>
 </body>
 
 </html>

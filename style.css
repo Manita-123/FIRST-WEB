@@ -33,14 +33,15 @@ body{ font:16px/1.3 var(--ff)}
 
 /* layout */
 
-.wrap-1{background: url(./img/bg.svg) var(--b) no-repeat center/cover;  color: var(--w); padding: 72px 0 82px;}
+.wrap-1{background: url(./img/bg.svg) var(--b) no-repeat center/cover;  color: var(--w); padding: 72px 0 82px; }
 h1{font-weight: 600;}
 h1 a{color: inherit;}
 nav li{ margin: 0 1rem;}
+/* .nav-menu{position: absolute; top: 100%; right: 20; width: 100%; background: #fff; color: var(--b); z-index: 999;} */
 nav a{ font-weight: 600; display:block; color: inherit; padding: 5px;}
 
 /* nav menu */
-.hamburger {display: none; font-size: 26px; cursor: pointer; position: absolute;}
+.hamburger, .cross {display: none; font-size: 26px; cursor: pointer; }
 .hamburger:hover{ display: block;}
 nav li:hover a{text-decoration: underline #7d7d7d;}
 nav li:active a{background:#7d7d7d;}
@@ -100,6 +101,7 @@ li.active a{border-color: var(--b);}
 .project-desc{ padding: 0 150px 0 60px;}
 .project-desc p{ text-align: justify; margin: 25px 0;}
 .project-desc a{display: block; width: 214px; line-height: 51px; text-align: center; background: var(--b); color: var(--w); border-radius: 5px; margin-top: 30px; }
+
 
 /* Team section */
 .team-info{ margin: 100px 0 0 0;}
@@ -161,7 +163,8 @@ nav a{ font-size: 14px;}
 .work-img  img{ width: 200px;}
 .works li>a{ line-height: 46px;}
 .review-top{padding: 64px 10px 0;}
-.icons ul{gap: 30px;}
+.projects img{ width: 100%; height: 100%;}
+.icons ul{gap: 10px;}
 }
 
 @media screen and (max-width:767px){
@@ -185,8 +188,10 @@ nav a{ font-size: 14px;}
 .work{margin: 0;}
 .team-member h3{ font-size: 22px;}
 .icons ul{gap: 8px;}
-nav li {display: none;}
+/* nav{position: relative;} */
+.nav-menu{display:none; flex-direction: column; }
 .hamburger { display: block; }
+.icons a{line-height: 30px; width: 30px; text-align: center; margin: 0.8rem; font-size: 10px; }
 }
 
 @media screen and (max-width:510px){
@@ -208,8 +213,9 @@ nav li {display: none;}
 .work >div{flex-flow: column; margin: 10px 0;}
 .work{margin: 20px 0 0 0;}
 .work-img img{width: auto;}
- .work{margin: auto;}
+.work{margin: auto;}
 .img-desc .para{ margin:20px 0 30px;}
 .img-desc a{line-height: 51px;}
 .works ul{gap:2rem;}
+.icons a{ line-height: 50px; width: 50px; text-align: center; margin: 1rem; font-size: 20px; }
 }
