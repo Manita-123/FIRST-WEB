@@ -51,6 +51,10 @@ nav li:active a{background:#7d7d7d;}
 .banner p b{font:500 28px/1.5 var(--ff)}
 .banner a{display: block; width: 185px; line-height: 50px; background: #fff; color: #000; border-radius: 5px; text-align: center;}
 
+.wrap-1 .bx-wrapper{ background: none; border:none; box-shadow: 0 0;}
+.wrap-1 .bx-wrapper .bx-pager.bx-default-pager a{background: #6b5f5f;}
+.wrap-1 .bx-wrapper .bx-pager.bx-default-pager a.active{background: #fff;}
+
 .wrap-2{padding: 100px 0;}
 .wrap-2 h2{ font: 500 20px var(--ff); color: var(--b); margin-bottom: 10px;}
 .wrap-2 h2+p{ font:700 28px var(--ff);}
