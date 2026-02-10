@@ -43,8 +43,8 @@ nav a{ font-weight: 600; display:block; color: inherit; padding: 5px;}
 /* nav menu */
 .hamburger, .cross {display: none; font-size: 26px; cursor: pointer; }
 .hamburger:hover{ display: block;}
-nav li:hover a{text-decoration: underline #7d7d7d;}
-nav li:active a{background:#7d7d7d;}
+nav li:hover a{text-decoration: underline #fd031c;}
+nav li:active a{background:#ec6e06;}
 
 .banner{margin-top: 76px;}
 .banner p{ font:16px/1.7 var(--ff); margin: 3rem 0 4rem;}
@@ -142,6 +142,50 @@ span{color: rgb(247, 4, 4); font-size: 2rem;}
 .About-info .row{margin: 60px 0;}
 .About-info h3{ font:500 24px var(--ff); line-height: 34px; margin-bottom: 24px; color: rgb(12, 12, 247);}
 
+
+/* portfolio-page */
+
+.portfolio-filter .btn {
+    margin: 3.4rem 0;
+    padding: 8px 20px;
+    background: #0a2540;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.portfolio-filter .btn.active,
+.portfolio-filter .btn:hover {
+    background: #00d4ff;
+    color: #000;
+}
+
+.portfolio-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 40px  20px 0 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+    height: 35rem;
+}
+
+.portfolio-content {
+    padding: 1rem;
+    color: #020e33;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+}
+
+.row.portfolio {
+    flex-wrap: wrap;   
+}
+
+
+
 /* responsive */
 @media screen and (max-width:1280px){
     .services section{ padding: 20px 20px 30px ;}
@@ -222,4 +266,5 @@ nav a{ font-size: 14px;}
 .img-desc a{line-height: 51px;}
 .works ul{gap:2rem;}
 .icons a{ line-height: 50px; width: 50px; text-align: center; margin: 1rem; font-size: 20px; }
+.hide{display: none;}
 }

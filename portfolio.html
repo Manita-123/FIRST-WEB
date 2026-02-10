@@ -22,10 +22,10 @@
                             <ul class="flex nav-menu">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="">Portfolio</a></li>
-                                <li><a href="">Expertise</a></li>
-                                <li><a href="">Clients</a></li>
-                                <li><a href="">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="Expertise.html">Expertise</a></li>
+                                <li><a href="clients.html">Clients</a></li>
+                                <li><a href="services.html">Services</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                             <div class="hamburger">&#9776;</div>
@@ -44,63 +44,71 @@
                     <h2>Our Portfolio</h2>
                     <p>Explore some of the projects we have successfully delivered</p>
                 </div>
+                <div class="row text-center portfolio-filter">
+                    <button class="btn active" data-filter="all" >All</button>
+                    <button class="btn" data-filter="web">Web Applications</button>
+                    <button class="btn" data-filter="mobile">Mobile Apps</button>
+                    <button class="btn hide" data-filter="enterprise">Enterprise Software</button>
+                    <button class="btn hide" data-filter="ecommerce">E-commerce</button>
+                </div>
+
                 <div class="row portfolio">
-                    <div class="col-4 col-m-6 col-p-12">
-                        <div class="portfolio-card">
-                            <img src="img/portfolio-1.webp" alt="Project 1" class="img-resp">
-                            <div class="portfolio-content">
+                    <div class="col-4 col-t-6 col-p-12 project-card ecommerce ">
+                        <div class="portfolio-card ">
+                            <img src="img/image.svg" alt="Project 1" class="img-resp">
+                            <div class="portfolio-content text-center" id="E-section">
                                 <h3>E-Commerce Platform</h3>
-                                <p>React • Node.js • MongoDB</p>
+                                <p>React <br> Node.js <br> MongoDB</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4 col-m-6 col-p-12">
+                    <div class="col-4 col-t-6 col-p-12 project-card web">
                         <div class="portfolio-card">
-                            <img src="img/portfolio-2.webp" alt="Project 2" class="img-resp">
-                            <div class="portfolio-content">
+                            <img src="img/image.svg" alt="Project 2" class="img-resp">
+                            <div class="portfolio-content text-center">
                                 <h3>Banking Web App</h3>
-                                <p>Angular • Java • MySQL</p>
+                                <p>Angular <br> Java <br> MySQL</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4 col-m-6 col-p-12">
-                        <div class="portfolio-card">
-                            <img src="img/portfolio-3.webp" alt="Project 3" class="img-resp">
-                            <div class="portfolio-content">
+                    <div class="col-4 col-t-6 col-p-12 project-card web enterprise ">
+                        <div class="portfolio-card ">
+                            <img src="img/image.svg" alt="Project 3" class="img-resp">
+                            <div class="portfolio-content text-center">
                                 <h3>Corporate Website</h3>
-                                <p>HTML • CSS • JavaScript</p>
+                                <p>HTML <br> CSS <br> JavaScript</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4 col-m-6 col-p-12">
-                        <div class="portfolio-card">
-                            <img src="img/portfolio-4.webp" alt="Project 4" class="img-resp">
-                            <div class="portfolio-content">
+                    <div class="col-4 col-t-6 col-p-12 project-card mobile ">
+                        <div class="portfolio-card ">
+                            <img src="img/image.svg" alt="Project 4" class="img-resp">
+                            <div class="portfolio-content text-center">
                                 <h3>Healthcare App</h3>
-                                <p>Flutter • Firebase</p>
+                                <p>Flutter <br> Firebase</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4 col-m-6 col-p-12">
-                        <div class="portfolio-card">
-                            <img src="img/portfolio-5.webp" alt="Project 5" class="img-resp">
-                            <div class="portfolio-content">
+                    <div class="col-4 col-t-6 col-p-12 project-card enterprise web">
+                        <div class="portfolio-card  ">
+                            <img src="img/image.svg" alt="Project 5" class="img-resp">
+                            <div class="portfolio-content text-center">
                                 <h3>Cloud Dashboard</h3>
-                                <p>AWS • React • Node.js</p>
+                                <p>AWS <br> React <br> Node.js</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-4 col-m-6 col-p-12">
-                        <div class="portfolio-card">
-                            <img src="img/portfolio-6.webp" alt="Project 6" class="img-resp">
-                            <div class="portfolio-content">
+                    <div class="col-4 col-t-6 col-p-12 project-card mobile ">
+                        <div class="portfolio-card ">
+                            <img src="img/image.svg" alt="Project 6" class="img-resp">
+                            <div class="portfolio-content text-center">
                                 <h3>Learning Management System</h3>
-                                <p>Laravel • MySQL</p>
+                                <p>Laravel <br> MySQL</p>
                             </div>
                         </div>
                     </div>
@@ -162,6 +170,30 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".portfolio-filter .btn").click(function () {
+                $(".portfolio-filter .btn").removeClass("active");
+                $(this).addClass("active");
+
+                let filter = $(this).data("filter");
+
+                if (filter === "all") {
+                    $(".project-card").show();
+
+                } else {
+                $(".project-card").hide();
+
+                    $(".project-card." + filter).show();
+
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
