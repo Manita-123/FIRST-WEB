@@ -116,6 +116,23 @@
             </div>
         </div>
     </footer>
-</body>
 
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+        $(function(){
+            $(".hamburger").click(function () {
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function () {
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
+        })
+    </script>
+</body>
 </html>

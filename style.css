@@ -43,8 +43,8 @@ nav a{ font-weight: 600; display:block; color: inherit; padding: 5px;}
 /* nav menu */
 .hamburger, .cross {display: none; font-size: 26px; cursor: pointer; }
 .hamburger:hover{ display: block;}
-nav li:hover a{text-decoration: underline #fd031c;}
-nav li:active a{background:#ec6e06;}
+nav li:hover a  {text-decoration: underline #f0b7bc;}
+nav li:active a{background:#9c9997;}
 
 .banner{margin-top: 76px;}
 .banner p{ font:16px/1.7 var(--ff); margin: 3rem 0 4rem;}

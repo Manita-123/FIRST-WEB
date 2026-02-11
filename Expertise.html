@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <div class="wrap-1">
         <div class="container">
@@ -35,7 +37,57 @@
         </div>
     </div>
     <div class="wrap-2">
-        <div class="container"></div>
+        <div class="container">
+            <div class="text-center">
+                <h2>OUR EXPERTISE</h2>
+                <p>Technologies & Domains We Specialize In</p>
+            </div>
+            <br>
+            <br>
+            <div class="row expertise">
+
+                <div class=" col-6 col-m-12 services">
+                    <section class=" s1 zoom">
+                        <h3>Web Development</h3>
+                        <p class="para">
+                            Scalable, secure, and high-performance web applications using
+                            modern frameworks.
+                        </p>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>React, Vue</li>
+                            <li>Node, PHP</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class=" col-6 col-m-12 services">
+                    <section class=" s1 zoom">
+                        <h3>Mobile App Development</h3>
+                        <p class="para">
+                            Native and cross-platform mobile solutions with smooth UX.
+                        </p>
+                        <ul>
+                            <li>Android & iOS</li>
+                            <li>Flutter, React Native</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class=" col-6 col-m-12 services">
+                    <section class=" s1 zoom">
+                        <h3>AI & Data Solutions</h3>
+                        <p class="para">
+                            Intelligent systems that turn data into business insights.
+                        </p>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Python, TensorFlow</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="wrap-3">
         <div class="container">
@@ -88,5 +140,25 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".hamburger").click(function () {
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function () {
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
+        })
+    </script>
 </body>
+
 </html>

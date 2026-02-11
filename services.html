@@ -7,7 +7,10 @@
     <title>Services</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css" />
 </head>
+
 <body>
     <div class="wrap-1">
         <div class="container">
@@ -37,6 +40,120 @@
     </div>
     <div class="wrap-2">
         <div class="container">
+            <div class="text-center">
+                <h2>SERVICES</h2>
+                <p>Complete IT Solutions for Your Business</p>
+            </div>
+            <div class="works">
+                <ul class="flex">
+                    <li class="flex active">
+                        <a class="vert" href="">Our Mission</a>
+                        <div class="work">
+                            <div class="flex align-items">
+                                <div class="work-img">
+                                    <img src="img/our-mission.webp" srcset="img/our-mission-2x.webp" alt="Our-mission"
+                                        height="295" width="300" loading="lazy" class="img-resp" />
+                                </div>
+                                <div class="img-desc">
+                                    <h3>Our Mission</h3>
+                                    <p class="para">
+                                        Integer non velit nec nunc pulvinar porttitor. Vivamus
+                                        euismod, mauris ac pellentesque commodo, est nunc
+                                        dapibus metus, vel dapibus felis lacus sit amet urna.
+                                        Curabitur feugiat bibendum ex, id mollis enim
+                                        sollicitudin dictum. Aenean ullamcorper volutpat lacus.
+                                    </p>
+                                    <a class="popup-image" href="img/our-mission.webp">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <a class="vert" href="">Our Company</a>
+                        <div class="work">
+                            <div class="flex align-items">
+                                <div class="work-img">
+                                    <img src="img/our-mission.webp" srcset="img/our-mission-2x.webp" alt="Our-mission"
+                                        height="295" width="300" loading="lazy" class="img-resp" />
+                                </div>
+                                <div class="img-desc">
+                                    <h3>Our Company</h3>
+                                    <p class="para">
+                                        Integer non velit nec nunc pulvinar porttitor. Vivamus
+                                        euismod, mauris ac pellentesque commodo, est nunc
+                                        dapibus metus, vel dapibus felis lacus sit amet urna.
+                                        Curabitur feugiat bibendum ex, id mollis enim
+                                        sollicitudin dictum. Aenean ullamcorper volutpat lacus.
+                                    </p>
+                                    <a class="popup-image" href="img/our-mission.webp">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex">
+                        <a class="vert" href="">Our Customer</a>
+                        <div class="work">
+                            <div class="flex align-items">
+                                <div class="work-img">
+                                    <img src="img/our-mission.webp" srcset="img/our-mission-2x.webp" alt="Our-mission"
+                                        height="295" width="300" loading="lazy" class="img-resp" />
+                                </div>
+                                <div class="img-desc">
+                                    <h3>Our Customer</h3>
+                                    <p class="para">
+                                        Integer non velit nec nunc pulvinar porttitor. Vivamus
+                                        euismod, mauris ac pellentesque commodo, est nunc
+                                        dapibus metus, vel dapibus felis lacus sit amet urna.
+                                        Curabitur feugiat bibendum ex, id mollis enim
+                                        sollicitudin dictum. Aenean ullamcorper volutpat lacus.
+                                    </p>
+                                    <a class="popup-image" href="img/our-mission.webp">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="row services">
+
+                <div class="col-3 col-t-6 col-p-12">
+                    <section class="zoom">
+                        <h3>Custom Software</h3>
+                        <p class="para">
+                            Tailor-made software designed to fit your business needs.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-3 col-t-6 col-p-12">
+                    <section class="zoom">
+                        <h3>Web Application</h3>
+                        <p class="para">
+                            Fast, secure, and responsive web solutions.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-3 col-t-6 col-p-12">
+                    <section class="zoom">
+                        <h3>Cloud & DevOps</h3>
+                        <p class="para">
+                            Cloud migration, CI/CD, and infrastructure automation.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-3 col-t-6 col-p-12">
+                    <section class="zoom">
+                        <h3>IT Consulting</h3>
+                        <p class="para">
+                            Expert guidance to improve technology strategy.
+                        </p>
+                    </section>
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -91,5 +208,35 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(function () {
+
+            $(".hamburger").click(function () {
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function () {
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
+            $(".works .vert").click(function (e) {
+                e.preventDefault();
+                $(".works > ul > li").removeClass("active");
+                $(this).parent().addClass("active");
+            });
+
+            $('.popup-image').magnificPopup({
+                type: 'image'
+            });
+        })
+    </script>
 </body>
+
 </html>

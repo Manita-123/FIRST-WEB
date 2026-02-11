@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <div class="wrap-1">
         <div class="container">
@@ -35,7 +37,97 @@
         </div>
     </div>
     <div class="wrap-2">
-        <div class="container"></div>
+        <div class="container">
+            <article class="profile">
+                <div class="text-center">
+                    <h2>TESTIMONIALS</h2>
+                    <p>Our Successful Clients</p>
+                </div>
+                <div class="row reviews">
+                    <div class="col-4 col-p-12">
+                        <section>
+                            <div class="review text-center">
+                                <div class="review-top">
+                                    <img src="img/Frame.svg" alt="frame" height="80" width="80" loading="lazy" />
+                                    <p>
+                                        Nisi Rhoncus Msttis Rhoncus Urna Neque Viverra Turpis
+                                        Egestas Pretium Aenean Pharetra Magna Ac Placerat
+                                        Vestibulum.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span>&starf;</span>
+                                    </div>
+                                    <img src="img/profile2.svg" alt="profile-1" height="120" width="120"
+                                        loading="lazy" />
+                                </div>
+                                <div class="review-bottom">
+                                    <h3>JULIA DOE</h3>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4 col-p-12">
+                        <section>
+                            <div class="review text-center">
+                                <div class="review-top">
+                                    <img src="img/Frame.svg" alt="frame" height="80" width="80" loading="lazy" />
+                                    <p>
+                                        Nisi Rhoncus Msttis Rhoncus Urna Neque Viverra Turpis
+                                        Egestas Pretium Aenean Pharetra Magna Ac Placerat
+                                        Vestibulum.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span>&starf;</span>
+                                    </div>
+                                    <img src="img/profile-3.svg" alt="profile-2" height="120" width="120"
+                                        loading="lazy" />
+                                </div>
+                                <div class="review-bottom">
+                                    <h3>JOHN DOE</h3>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-4 col-p-12">
+                        <section>
+                            <div class="review text-center">
+                                <div class="review-top">
+                                    <img src="img/Frame.svg" alt="frame" height="80" width="80" loading="lazy" />
+                                    <p>
+                                        Nisi Rhoncus Msttis Rhoncus Urna Neque Viverra Turpis
+                                        Egestas Pretium Aenean Pharetra Magna Ac Placerat
+                                        Vestibulum.
+                                    </p>
+                                    <div class="rating">
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span class="fill">&starf;</span>
+                                        <span>&starf;</span>
+                                    </div>
+                                    <img src="img/profile3.svg" alt="profile-3" height="120" width="120"
+                                        loading="lazy" />
+                                </div>
+                                <div class="review-bottom">
+                                    <h3>JULIA DOE</h3>
+                                    <p>Businessman</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
     </div>
     <footer class="wrap-3">
         <div class="container">
@@ -88,5 +180,24 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script>
+        $(function(){
+            $(".hamburger").click(function () {
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function () {
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
+        })
+    </script>
 </body>
+
 </html>

@@ -45,7 +45,7 @@
                     <p>Explore some of the projects we have successfully delivered</p>
                 </div>
                 <div class="row text-center portfolio-filter">
-                    <button class="btn active" data-filter="all" >All</button>
+                    <button class="btn active" data-filter="all">All</button>
                     <button class="btn" data-filter="web">Web Applications</button>
                     <button class="btn" data-filter="mobile">Mobile Apps</button>
                     <button class="btn hide" data-filter="enterprise">Enterprise Software</button>
@@ -172,9 +172,21 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
-
     <script>
         $(function () {
+
+            $(".hamburger").click(function () {
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function () {
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
             $(".portfolio-filter .btn").click(function () {
                 $(".portfolio-filter .btn").removeClass("active");
                 $(this).addClass("active");
@@ -182,18 +194,16 @@
                 let filter = $(this).data("filter");
 
                 if (filter === "all") {
-                    $(".project-card").show();
-
+                    $(".project-card").show(300);
                 } else {
-                $(".project-card").hide();
-
-                    $(".project-card." + filter).show();
+                    $(".project-card").hide();
+                    $(".project-card." + filter).show(300);
 
                 }
             });
-
-        });
+        })
     </script>
+
 </body>
 
 </html>
