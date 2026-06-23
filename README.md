@@ -2,7 +2,7 @@
 
 ## my first webpage
 
-My First Website Project: Designed by Figma, Built with HTML & CSS
+My First Website Project: Designed by Figma, Built with HTML5 , CSS3 , JavaScript ,jQuery , bxSlider , magnific-popup 
 
 This is my first website project, designed in Figma. It’s a single-page website that represents an IT Community platform.
 
@@ -16,6 +16,8 @@ Convert this Figma design into a fully functional responsive website using HTML 
 
 Figma – for UI/UX design
 
-HTML5 & CSS3 (for implementation)
+HTML5 , CSS3 and JS (for implementation)
 
 Visual Studio Code – code editor
+
+Plugins: bxSlider , magnific popup
