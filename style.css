@@ -67,6 +67,10 @@ section.s1{ border-top-color: var(--b);}
 .para{margin: 20px 0 30px; font-size: 14px; opacity: 0.6; text-align: justify;}
 .s2{ background: var(--b); color: #fff;}
 
+.why-choose-us {padding: 60px 20px; text-align: center;}
+
+.why-choose-us h2 { margin-bottom: 15px;}
+
 /* Info section */
 .info{gap: 2rem;}
 .info b{font: 600 24px var(--ff);}
