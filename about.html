@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrap-1">
+        <div class="container">
+            <header>
+                <div class="row align-items">
+                    <div class="col-2 col-m-6">
+                        <h1><a href="">IT WEBSITE</a></h1>
+                    </div>
+                    <div class="col-10 col-m-6">
+                        <nav class="flex justify-right ">
+                            <ul class="flex">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="Expertise.html">Expertise</a></li>
+                                <li><a href="clients.html">Clients</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                            <div class="hamburger">&#9776;</div>
+                            <div class="cross">&#9747;</div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="wrap-2">
+        <div class="container About-info">
+            <div class="text-center">
+                <h2>About US</h2>
+                <p>Discover who we are and what drives our innovation</p>
+            </div>
+            <div class="row align-items about">
+                <div class="col-5 col-m-12 ">
+                    <h1>Our story</h1>
+                    <p>
+                        FIRST WEB began with a simple vision — to create powerful,
+                        user-friendly digital solutions for businesses and individuals.
+                        What started as a small web development initiative has grown
+                        into a full-service IT company focused on innovation,
+                        performance, and reliability.
+                    </p>
+                    <p>
+                        Today, we help clients build modern websites, applications,
+                        and digital platforms that drive growth. Our team combines
+                        creativity, technical expertise, and industry experience to
+                        deliver high-quality solutions tailored to every client’s needs.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6 col-m-12 order-m-1">
+                    <img src="img/about.webp" srcset="img/about-2x.webp" alt=" About" width="582" height="478"
+                        class="img-resp">
+                </div>
+            </div>
+            <div class="info row text-center">
+                <div class="col-3 col-t-6 col-p-12">
+                    <b>782</b>
+                    <p>WORLDWIDE CUSTOMERS</p>
+                </div>
+                <div class="col-3 col-t-6 col-p-12">
+                    <b>12K</b>
+                    <p>PROJECTS DONE</p>
+                </div>
+                <div class="col-3 col-t-6 col-p-12">
+                    <b>5,896</b>
+                    <p>IT PROJECTS</p>
+                </div>
+                <div class="col-3 col-t-6 col-p-12">
+                    <b>&dollar; 890 K</b>
+                    <p>PROJECTS SPEND</p>
+                </div>
+            </div>
+            <div class=" services row">
+                <div class="col-6 col-m-12 ">
+                    <section class="s1 zoom">
+                        <h3>Our mission</h3>
+                        <p class="para">
+                            To deliver innovative, secure, and scalable IT solutions that
+                        help businesses grow and succeed in the digital world.
+                        </p>
+                        <a href="">Learn more &gt;</a>
+                    </section>
+                </div>
+                <div class="col-6 col-m-12">
+                    <section class="s1 zoom">
+                        <h3>Our Vision</h3>
+                        <p class="para">
+                            To become a globally trusted technology partner known for
+                        quality, innovation, and long-term client success.
+                        </p>
+                        <a href="">Learn more &gt;</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="wrap-3">
+        <div class="container">
+            <div class="row ">
+                <div class="col-3 col-p-6 ">
+                    Digital experience is always embedded in a physical experience.
+                </div>
+                <div class="col-1 col-t-hide" role="separator"></div>
+                <div class="col-2 col-p-6">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Hosting</a></li>
+                        <li><a href="#">Domains</a></li>
+                        <li><a href="#">Premium Hosting</a></li>
+                        <li><a href="#">Private Server</a></li>
+                        <li><a href="#">E-mail Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-1 col-t-hide" role="separator"></div>
+                <div class="col-2 col-p-4 ">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-p-8">
+                    <h3>Contant us</h3>
+                    <p><a href="">emailaddress@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="flex">
+                <p>Design with &nbsp; <span>&hearts;</span> &copy; &nbsp; Manita 2025, All right reserved</p>
+                <p> Claim Privacy Terms</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    
+    <script>
+        $(function(){
+            $(".hamburger").click(function () {
+                $(".nav-menu").slideDown();
+                $(this).hide();
+                $(".cross").show();
+            });
+
+            $(".cross").click(function () {
+                $(".nav-menu").slideUp();
+                $(this).hide();
+                $(".hamburger").show();
+            });
+
+        })
+    </script>
+</body>
+
+</html>
