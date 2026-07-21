@@ -69,6 +69,21 @@ section.s1{ border-top-color: var(--b);}
 
 .why-choose-us {padding: 60px 20px; text-align: center;}
 .why-choose-us h2 { margin-bottom: 15px;}
+.dark-area {
+    transition: background-color 0.3s ease;
+}
+
+.dark-area.dark-mode {
+    background-color: #121212;
+}
+
+.dark-area.dark-mode button {
+    background-color: #333;
+    color: #fff !important;
+    border: 1px solid #555;
+}
+
+.dark-area.dark-mode *{color: var(--w);}
 
 /* Info section */
 .info{gap: 2rem;}

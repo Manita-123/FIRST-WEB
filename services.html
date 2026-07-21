@@ -202,32 +202,7 @@
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(function () {
-
-            $(".hamburger").click(function () {
-                $(".nav-menu").slideDown();
-                $(this).hide();
-                $(".cross").show();
-            });
-
-            $(".cross").click(function () {
-                $(".nav-menu").slideUp();
-                $(this).hide();
-                $(".hamburger").show();
-            });
-
-            $(".works .vert").click(function (e) {
-                e.preventDefault();
-                $(".works > ul > li").removeClass("active");
-                $(this).parent().addClass("active");
-            });
-
-            $('.popup-image').magnificPopup({
-                type: 'image'
-            });
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
